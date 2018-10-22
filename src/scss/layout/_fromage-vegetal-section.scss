@@ -2,8 +2,11 @@ body {
   background-color: $tortank;
 }
 header {
-  background: url($imgPath + 'img/le-colonel.jpg');
+  display: block;
+  height: 100vh;
+  margin-bottom: 50px;
   h2 {
+    padding-top: 60px;
     color: white;
   }
 }
@@ -12,39 +15,46 @@ main {
   margin: 0 $desktop-container;
 }
 .background-header-fromage {
+  background: url($imgPath + 'img/bitmap.png') no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 80%;
   color: black;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 500px;
 }
 .header-fromage-infos {
+  width: 22%;
+  align-self: flex-end;
+  margin-right: 10%;
+  color: $tortank;
   h2 {
     text-align: left;
+    color: $tortank;
   }
   span {
     margin: $small-margin 0;
     width: 200px;
     height: 2px;
-    background-color: black;
+    background-color: $tortank;
     opacity: 0.7;
     display: block;
   }
-  width: 22%;
-  align-self: flex-end;
-  margin-right: 10%;
+
   a {
     text-decoration: none;
     padding: 10px;
     border-radius: 50%;
-    border: 1px solid white;
-    color: white;
+    border: 1px solid $tortank;
+    color: $tortank;
   }
 }
 .navigation-header {
-  height: 30px;
-  margin: $large-margin $desktop-container;
+  height: 20%;
+  margin: 0 $desktop-container;
   display: flex;
+  align-items: center;
   justify-content: space-around;
   a {
     text-transform: uppercase;
@@ -71,16 +81,22 @@ main {
 }
 
 .fromage-vegetal-infos {
+  width: 100%;
+  height: auto;
+  margin: $medium-margin 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
   h3 {
+    margin-top: 15px;
     font-size: $title-size;
     text-transform: uppercase;
     margin-bottom: $small-margin;
   }
-  margin: $medium-margin 0;
-  display: flex;
-  justify-content: space-between;
+
   img {
     width: 55%;
+    height: auto;
   }
   div {
     line-height: $line-height;
