@@ -2,6 +2,7 @@ body {
   background-color: $tortank;
 }
 header {
+  background: url($imgPath + 'img/le-colonel.jpg');
   h2 {
     color: white;
   }
