@@ -1,5 +1,7 @@
 body,h1 {
   font-family: $fontText;
+   
+
 }
 h2,h3,h4,h5,h6 {
   font-family: $fontTitle;
@@ -9,4 +11,5 @@ h1 {
   width: 100%;
   font-size: 16px;
   background-color: $tortank;
+  font-weight: normal;
 }
