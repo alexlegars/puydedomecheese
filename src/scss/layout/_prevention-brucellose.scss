@@ -21,9 +21,12 @@
 }
 .transmission-brucellose {
   line-height: $line-height;
+  h2 {
+    margin-bottom: $large-margin;
+  }
   div {
-    margin-top: $medium-margin;
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
   }
   img {
@@ -35,9 +38,10 @@
   }
 }
 .actions-entreprise {
+  line-height: $line-height;
   margin: $large-margin 0;
   h2 {
-    margin-bottom: $medium-margin;
+    margin-bottom: $large-margin;
   }
   ul {
     padding-left: 10px;
