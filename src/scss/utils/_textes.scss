@@ -8,6 +8,9 @@ h2 {
   text-transform: uppercase;
   text-align: center;
   font-size: $title-size;
+  @include mobile {
+    font-size: $title-size_mob;
+  }
   span {
     font-weight: initial;
     display: block;

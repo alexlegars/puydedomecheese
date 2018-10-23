@@ -8,11 +8,19 @@ header {
   h2 {
     padding-top: 60px;
     color: white;
+    @include mobile {
+      padding-top: 30px;
+
+    }
   }
 }
 main {
   color: $bulbizarre;
   margin: 0 $desktop-container;
+  @include mobile {
+    margin: 0 20px;
+    text-align: center;
+  }
 }
 .background-header-fromage {
   background: url($imgPath + 'img/bitmap.png') no-repeat center;
@@ -23,15 +31,30 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @include mobile { 
+    background: url($imgPath + 'img/bitmap_mob.jpg') no-repeat center;
+    background-size: cover;
+  }
 }
 .header-fromage-infos {
+  display: flex;
+  flex-direction: column;
   width: 22%;
   align-self: flex-end;
   margin-right: 10%;
   color: $tortank;
+  @include mobile {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center
+  }
   h2 {
     text-align: left;
     color: $tortank;
+
+    @include mobile {
+      text-align: center;
+    }
   }
   span {
     margin: $small-margin 0;
@@ -40,14 +63,25 @@ main {
     background-color: $tortank;
     opacity: 0.7;
     display: block;
+    @include mobile {
+      margin: 15px auto;
+    }
   }
 
   a {
+    display: inline-block;
+    margin: 0 0 20px 0;
+    text-align: center;
+    width: 125px;
     text-decoration: none;
     padding: 10px;
-    border-radius: 50%;
+    border-radius: 50px;
     border: 1px solid $tortank;
     color: $tortank;
+    @include mobile {
+      margin: 0 auto 20px;
+
+    }
   }
 }
 .navigation-header {
@@ -56,6 +90,9 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  @include mobile() {
+    display: none;
+  }
   a {
     text-transform: uppercase;
     text-decoration: none;
@@ -69,14 +106,28 @@ main {
 }
 .kezako-cheese-infos {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
   margin: $large-margin 0;
+  @include mobile {
+    align-items: center;
+    flex-direction: column;
+  };
   img {
     max-height: 620px;
+    width: 40%; 
+    height: auto;
+    @include mobile {
+      width: 85%;
+    }
+
   }
   div {
     width: 55%;
     line-height: $line-height;
+    @include mobile {
+      width: 100%;
+    }
   }
 }
 
@@ -87,9 +138,19 @@ main {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  &.colo {
+    @include mobile() {
+      flex-direction: column-reverse;
+    };
+   }
+  @include mobile() {
+    flex-direction: column;
+    align-items: center
+  
+  };
   h3 {
     margin-top: 15px;
-    font-size: $title-size;
+    font-size: 2.5em;
     text-transform: uppercase;
     margin-bottom: $small-margin;
   }
@@ -97,10 +158,16 @@ main {
   img {
     width: 55%;
     height: auto;
+    @include mobile {
+      width: 100%
+    }
   }
   div {
     line-height: $line-height;
     width: 40%;
+    @include mobile {
+      width: 100%;
+    }
   }
 }
 .semaine-du-gout {
@@ -108,7 +175,10 @@ main {
   background-color: $bulbizarre;
   color: white;
   text-align: center;
-  margin: $large-margin -21.4%;
+  margin: $large-margin 0;
+  @include mobile {
+    padding: $small-margin;
+  }
   > span {
     height: 4px;
     width: 160px;
@@ -117,10 +187,11 @@ main {
     margin: auto;
   }
   > * {
-    margin: $medium-margin $desktop-container;
+    margin: $medium-margin 0;
   }
   p {
     font-weight: bold;
+    max-width: 100%;
   }
   p:last-child {
     font-weight: inherit;
@@ -129,15 +200,26 @@ main {
 }
 .puy-de-dome-infos {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
   line-height: $line-height;
   margin: $large-margin 0;
+  @include mobile {
+    align-items: center;
+    flex-direction: column;
+  };
   img {
     width: 45%;
     max-height: 433px;
+    @include mobile {
+      width: 100%;
+    };
   }
   > * {
     width: 45%;
+    @include mobile {
+      width: 100%;
+    }
   }
 }
 .social-media-fromage {
