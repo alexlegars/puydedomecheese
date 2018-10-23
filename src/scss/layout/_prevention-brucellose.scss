@@ -1,0 +1,48 @@
+.brucellose-explication {
+  h2 {
+    background-color: $bulbizarre;
+    color: white;
+    margin-right: -$desktop-container;
+    margin-left: -$desktop-container;
+    margin-bottom: $large-margin;
+    padding: $small-margin;
+  }
+  line-height: $line-height;
+}
+.qu-est-ce-que-brucellose {
+  margin: $large-margin 0;
+  line-height: $line-height;
+  h2 {
+    margin-bottom: $medium-margin;
+  }
+  p {
+    margin: 0;
+  }
+}
+.transmission-brucellose {
+  line-height: $line-height;
+  div {
+    margin-top: $medium-margin;
+    display: flex;
+    justify-content: space-between;
+  }
+  img {
+    width: 30%;
+  }
+  p {
+    margin: 0;
+    width: 60%;
+  }
+}
+.actions-entreprise {
+  margin: $large-margin 0;
+  h2 {
+    margin-bottom: $medium-margin;
+  }
+  ul {
+    padding-left: 10px;
+  }
+  li {
+    list-style-type: '- ';
+  }
+}

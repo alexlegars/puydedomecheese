@@ -1,0 +1,28 @@
+.semaine-du-gout {
+  padding: $medium-margin;
+  background-color: $bulbizarre;
+  color: white;
+  text-align: center;
+  margin: $large-margin -50px;
+  @include mobile {
+    padding: $small-margin;
+  }
+  > span {
+    height: 4px;
+    width: 160px;
+    background-color: $salameche;
+    display: block;
+    margin: auto;
+  }
+  > * {
+    margin: $medium-margin 0;
+  }
+  p {
+    font-weight: bold;
+    max-width: 100%;
+  }
+  p:last-child {
+    font-weight: inherit;
+    line-height: $line-height;
+  }
+}

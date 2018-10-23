@@ -1,0 +1,15 @@
+.background-header-fromage {
+  background: url($imgPath + 'img/bitmap.svg') no-repeat center;
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: 80%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include mobile {
+    background: url($imgPath + 'img/bitmap_mob.jpg') no-repeat center;
+    background-size: cover;
+  }
+}

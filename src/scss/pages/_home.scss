@@ -1,0 +1,11 @@
+body {
+  background-color: $tortank;
+}
+main {
+  color: $bulbizarre;
+  margin: 0 $desktop-container;
+  @include mobile {
+    margin: 0 20px;
+    text-align: center;
+  }
+}
