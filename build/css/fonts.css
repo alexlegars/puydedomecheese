@@ -22,6 +22,13 @@
   }
   @font-face {
     font-family: 'OpenSans';
+    src: url('../assets/fonts/OpenSans-Semibold.eot') format('embedded-opentype');
+    src:  url('../assets/fonts/OpenSans-Semibold.woff') format('woff'), url('../assets/fonts/OpenSans-Semibold.ttf')  format('truetype'), url('../assets/fonts/OpenSans-Semibold.svg#OpenSans-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'OpenSans';
     src: url('../assets/fonts/OpenSans-Bold.eot') format('embedded-opentype');
     src:  url('../assets/fonts/OpenSans-Bold.woff') format('woff'), url('../assets/fonts/OpenSans-Bold.ttf')  format('truetype'), url('../assets/fonts/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
     font-weight: bold;

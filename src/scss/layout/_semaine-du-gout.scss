@@ -3,7 +3,7 @@
   background-color: $bulbizarre;
   color: white;
   text-align: center;
-  margin: $large-margin -50px;
+  margin: $large-margin $desktop-container-negatif;
   @include mobile {
     padding: $small-margin;
   }

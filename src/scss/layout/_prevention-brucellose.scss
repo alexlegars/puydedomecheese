@@ -2,8 +2,8 @@
   h2 {
     background-color: $bulbizarre;
     color: white;
-    margin-right: -$desktop-container;
-    margin-left: -$desktop-container;
+    margin-right: $desktop-container-negatif;
+    margin-left: $desktop-container-negatif;
     margin-bottom: $large-margin;
     padding: $small-margin;
   }
