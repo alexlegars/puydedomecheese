@@ -6,6 +6,7 @@
   margin: $large-margin $desktop-container-negatif;
   @include mobile {
     padding: $small-margin;
+    margin: $large-margin -20px;
   }
   > span {
     height: 4px;

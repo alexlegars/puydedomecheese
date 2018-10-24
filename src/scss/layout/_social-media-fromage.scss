@@ -5,6 +5,10 @@
   background-color: $bulbizarre;
   padding: $medium-margin 0 $small-margin;
   color: white;
+  @include mobile {
+    padding: $small-margin;
+    margin: $large-margin -20px;
+  }
   .partage-lien {
     align-self: center;
     margin-bottom: $small-margin;

@@ -13,6 +13,9 @@
     margin-right: $desktop-container-negatif;
     margin-left: $desktop-container-negatif;
     margin-bottom: $large-margin;
+    @include mobile {
+      margin: $large-margin -20px;
+    }
     padding: $small-margin;
   }
   line-height: $line-height;
@@ -46,15 +49,25 @@
   }
   div {
     display: flex;
+    flex-direction: row-reverse;
     align-items: flex-start;
     justify-content: space-between;
+    @include mobile {
+      display: block;
+    }
   }
   img {
     width: 30%;
+    @include mobile {
+      width: 95%;
+    }
   }
   p {
     margin: 0;
     width: 60%;
+    @include mobile {
+      width: 100%;
+    }
   }
 }
 .actions-entreprise {
