@@ -1,0 +1,20 @@
+.contact-us {
+  position: absolute;
+  right: 0;
+  top: 45%;
+  p {
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    -o-transform:rotateY(180deg);
+    -ms-transform:rotateY(180deg);
+    border-radius: 0 50% 50% 0;
+    background-color: white;
+    width: fit-content;
+    color: $bulbizarre;
+    padding: 8px;
+    cursor: pointer;
+  }
+}
+.formulaire-contact {
+  display: none;
+}

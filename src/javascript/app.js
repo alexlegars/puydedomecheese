@@ -39,3 +39,6 @@ $('a[href*="#"]')
       }
     }
   });
+$('.contact-us').click(function () {
+    console.log('hi');
+});
