@@ -3,7 +3,9 @@ console.log('😎')
 import app from './../scss/app.scss'
 
 
-
+$('.contact-us').click(function () {
+  console.log('hi');
+});
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
@@ -39,6 +41,3 @@ $('a[href*="#"]')
       }
     }
   });
-$('.contact-us').click(function () {
-    console.log('hi');
-});
