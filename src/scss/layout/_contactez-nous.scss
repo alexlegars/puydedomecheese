@@ -1,20 +1,60 @@
 .contact-us {
-  position: absolute;
+  position: fixed;
   right: 0;
-  top: 45%;
-  p {
-    -webkit-transform:rotateY(180deg);
-    -moz-transform:rotateY(180deg);
-    -o-transform:rotateY(180deg);
-    -ms-transform:rotateY(180deg);
-    border-radius: 0 50% 50% 0;
-    background-color: white;
-    width: fit-content;
-    color: $bulbizarre;
-    padding: 8px;
-    cursor: pointer;
-  }
+  bottom: 10px;
 }
 .formulaire-contact {
   display: none;
+  form {
+    width: 365px;
+    height: 442px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: $bulbizarre;
+    padding: 30px;
+    border-radius: 0 0 5px 5px;
+    input, textarea {
+      border: 1px solid $bulbizarre;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      width: 305px;
+    }
+    label {
+      margin-bottom: 10px;
+      font-weight: 600;
+      align-self: flex-start;
+    }
+    input {
+      height: 45px;
+    }
+    textarea {
+      height: 188px;
+    }
+    button {
+      background-color: $bulbizarre;
+      border-radius: 50px;
+      border: 0;
+      align-self: flex-end;
+      color: white;
+      padding: 17px 50px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    p {
+      margin: auto;
+    }
+  }
+}
+.exit-formulaire-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  background-color: $bulbizarre;
+  border-radius: 5px 5px 0 0;
+  span {
+    cursor: pointer;
+    font-size: 30px;
+  }
 }

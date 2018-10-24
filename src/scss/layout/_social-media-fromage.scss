@@ -1,5 +1,4 @@
 .social-media-fromage {
-  position: relative;
   display: flex;
   flex-direction: column;
   margin: $small-margin $desktop-container-negatif 0;
@@ -22,8 +21,10 @@
       }
     }
   }
-  img {
-    height: 30px;
-    margin-right: 30px;
+  .partage-lien {
+    img {
+      height: 30px;
+      margin-right: 30px;
+    }
   }
 }

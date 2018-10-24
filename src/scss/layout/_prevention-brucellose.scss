@@ -1,5 +1,13 @@
 .brucellose-explication {
-  h2 {
+  .back-to-home {
+    img {
+      position: absolute;
+      margin-top: 6px;
+      @include mobile {
+        position: inherit;
+        margin-top: 0;
+      }
+    }
     background-color: $bulbizarre;
     color: white;
     margin-right: $desktop-container-negatif;
@@ -9,6 +17,8 @@
   }
   line-height: $line-height;
 }
+
+
 .qu-est-ce-que-brucellose {
   margin: $large-margin 0;
   line-height: $line-height;
