@@ -1,7 +1,8 @@
 .contact-us {
-  box-shadow: 0 0 10px #ccc;
   p {
     img {
+      box-shadow: 0 0 10px #ccc;
+      border-radius: 50px 0 0 50px;
       width: 52px;
     }
     cursor: pointer;
@@ -12,6 +13,9 @@
 }
 .formulaire-contact {
   display: none;
+  box-shadow: 0 0 10px #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
   form {
     width: 365px;
     height: 442px;
