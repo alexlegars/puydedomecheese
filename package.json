@@ -6,9 +6,7 @@
     "build": "webpack -p",
     "watch": "webpack --watch"
   },
-  "dependencies": {
-    "exceljs": "^1.6.2"
-  },
+  "dependencies": {},
   "paths": {},
   "devDependencies": {
     "babel-core": "^6.23.1",
